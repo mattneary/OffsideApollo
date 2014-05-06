@@ -3,4 +3,11 @@ body {
   color: white;
   font-family: 'Helvetica Neue', sans-serif;
 }
+#wrapper {
+  width: 900px;
+  margin: auto;
+}
+#hero {
+  width: 100%;
+}
 
