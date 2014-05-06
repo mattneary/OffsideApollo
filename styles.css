@@ -11,4 +11,23 @@ body {
 #hero {
   width: 100%;
 }
+#members .member {
+  float: left;
+  width: 450px;
+  box-sizing: border-box;
+  padding: 25px;
+  padding-right: 0;
+  float: left;
+}
+.member .avatar, .member .details {
+  float: left;
+}
+.member .details {
+  margin-left: 10px;
+  width: 300px;
+}
+.member h2 {
+  margin: 0;
+  padding: 0;
+}
 
