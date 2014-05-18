@@ -64,4 +64,13 @@ ul#nav {
 iframe {
   width: 100% !important;
 }
+#music-download {
+  width: 100%;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  background: white;
+  text-align: center;
+  padding: 20px 0px;
+}
 
