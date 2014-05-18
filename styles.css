@@ -6,6 +6,12 @@ body {
 iframe {
   border: none;
 }
+a.twitter-timeline {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: white;
+}
 #hero {
   margin-top: 10px;
 }
