@@ -3,11 +3,8 @@ body {
   color: white;
   font-family: 'Helvetica Neue', sans-serif;
 }
-h1 {
-  font-size: 3em;
-  margin: 0;
-  padding-bottom: 10px;
-  text-align: center;
+#hero {
+  margin-top: 10px;
 }
 h2 {
   font-size: 2em;
@@ -23,7 +20,7 @@ h2 {
 #hero {
   width: 100%;
 }
-#members .member {
+#content .member {
   float: left;
   width: 450px;
   box-sizing: border-box;
@@ -45,5 +42,22 @@ h2 {
 .member h3 {
   margin: 0;
   padding: 0;
+}
+ul#nav {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  }
+  #nav li {
+    display: inline;
+    margin: 0 10px;
+    }
+    #nav li a {
+      text-decoration: none;
+      color: white;
+    }
+iframe {
+  width: 100% !important;
 }
 

@@ -3,47 +3,46 @@
   <head>
     <title>Offside Apollo</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
   </head>
   <body>
     <div id="wrapper">
-      <h1>Offside Apollo</h1>
-      <img src="album.png" id="hero">
-      <div id="members">
-        <h2>Members</h2>
-        <div class="member">
-	  <img src="http://placehold.it/70x110" class="avatar">
-	  <div class="details">
-	    <h3>Michael Sengelmann</h3>
-	    <p>
-	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-	      pharetra nulla sed est porta suscipit. Pellentesque pharetra
-	      auctor venenatis. 
-	    </p>
-	  </div>
+      <div id="header">
+	<div id="hero">
+	  <img src="album.png" id="hero">
 	</div>
-        <div class="member">
-	  <img src="http://placehold.it/70x110" class="avatar">
-	  <div class="details">
-	    <h3>Clay Weiner</h3>
-	    <p>
-	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-	      pharetra nulla sed est porta suscipit. Pellentesque pharetra
-	      auctor venenatis. 
-	    </p>
-	  </div>
-	</div>
-        <div class="member">
-	  <img src="http://placehold.it/70x110" class="avatar">
-	  <div class="details">
-	    <h3>Sam Mathes</h3>
-	    <p>
-	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-	      pharetra nulla sed est porta suscipit. Pellentesque pharetra
-	      auctor venenatis. 
-	    </p>
-	  </div>
-	</div>
+	<ul id="nav">
+	  <li><a href="#" data-page="home.html">Home</a></li>
+	  <li><a href="#" data-page="about.html">About</a></li>
+	  <li><a href="#" data-page="photos.html">Photos</a></li>
+	  <li><a href="#" data-page="tour.html">Tour</a></li>
+	  <li><a href="#" data-page="music.html">Music</a></li>
+	  <li><a href="#" data-page="merchandise.html">Merchandise</a></li>
+	  <li><a href="#" data-page="links.html">Links</a></li>
+	  <li><a href="#" data-page="contact.html">Contact</a></li>
+	</ul>
       </div>
+      <div id="content">
+      </div>
+      <script type="text/javascript">
+	var load = function(page) {
+	  $.get("/" + page, function(html) {
+	    $("#content").html(html);
+	  });
+	};
+	var render = function(name) {
+	  var content = $("#"+name).html();
+	  var match = content.match(/@embed\{([^}]+)\}/);
+	  if(match) {
+	    var full = match[0], page = match[1];
+	  }
+	};
+	$("#nav li a").click(function(evt) {
+	  evt.preventDefault();
+	  load($(this).data("page"));
+	});
+	load("home.html");
+      </script>
     </div>
   </body>
 </html>
