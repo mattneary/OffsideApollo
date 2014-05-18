@@ -1,5 +1,5 @@
 body {
-  background: #1E0F1D;
+  background: #1E0F1D url(bg.png) no-repeat;
   color: white;
   font-family: 'Helvetica Neue', sans-serif;
 }
