@@ -3,6 +3,9 @@ body {
   color: white;
   font-family: 'Helvetica Neue', sans-serif;
 }
+iframe {
+  border: none;
+}
 #hero {
   margin-top: 10px;
 }
