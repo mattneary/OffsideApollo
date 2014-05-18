@@ -5,12 +5,7 @@ body {
 }
 iframe {
   border: none;
-}
-a.twitter-timeline {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: white;
+  height: 320px !important;
 }
 #hero {
   margin-top: 10px;

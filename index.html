@@ -14,12 +14,14 @@
 	<ul id="nav">
 	  <li><a href="#" data-page="home.html">Home</a></li>
 	  <li><a href="#" data-page="about.html">About</a></li>
+	  <li><a href="#" data-page="music.html">Music</a></li>
+	  <!--
 	  <li><a href="#" data-page="photos.html">Photos</a></li>
 	  <li><a href="#" data-page="tour.html">Tour</a></li>
-	  <li><a href="#" data-page="music.html">Music</a></li>
 	  <li><a href="#" data-page="merchandise.html">Merchandise</a></li>
 	  <li><a href="#" data-page="links.html">Links</a></li>
 	  <li><a href="#" data-page="contact.html">Contact</a></li>
+	  -->
 	</ul>
       </div>
       <div id="content">
@@ -43,19 +45,6 @@
 	  $("body").data("twttr-rendered", false);
 	});
 	load("home.html");
-      </script>
-      <script>
-	!function(d,s,id){
-	  var js,
-	      fjs = d.getElementsByTagName(s)[0],
-	      p = /^http:/.test(d.location)?'http':'https';
-	      if(!d.getElementById(id)){
-		js=d.createElement(s);
-		js.id=id;
-		js.src=p+"://platform.twitter.com/widgets.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	      }
-	}(document,"script","twitter-wjs-"+Math.floor(Math.random()*100));
       </script>
     </div>
   </body>
