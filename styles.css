@@ -69,7 +69,8 @@ iframe {
   text-decoration: none;
   width: 100%;
   display: block;
-  background: white;
+  background: #333;
+  color: white;
   text-align: center;
   padding: 20px 0px;
 }
