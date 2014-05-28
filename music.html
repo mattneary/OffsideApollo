@@ -3,11 +3,11 @@
     <img src="cover.jpg">
     <audio controls id="player"></audio>
     <ol class="songs">
-      <li>From the Mountaintop</li>
-      <li>Go Without Grace</li>
-      <li>To the Men Left in the Dark</li>
-      <li>The River Song</li>
-      <li>What's Left on Earth</li>
+      <li data-file="mountain.mp3">From the Mountaintop</li>
+      <li data-file="grace.mp3">Go Without Grace</li>
+      <li data-file="men.mp3">To the Men Left in the Dark</li>
+      <li data-file="river.mp3">The River Song</li>
+      <li data-file="earth.mp3">What's Left on Earth</li>
     </ol>
   </li>
 </ul>
@@ -19,7 +19,7 @@
     evt.preventDefault();
     $siblings.removeClass("active");
     $(this).addClass("active");
-    $player.attr("src", "river.mp3")
+    $player.attr("src", "/music/"+$(this).data("file"));
     $player[0].play();
   });
 </script>
