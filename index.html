@@ -9,12 +9,12 @@
     <div id="wrapper">
       <div id="header">
 	<div id="hero">
-	  <img src="album.png" id="hero">
+	  <img src="header.png" id="hero">
 	</div>
 	<ul id="nav">
-	  <li><a href="#" data-page="home.html">Home</a></li>
-	  <li><a href="#" data-page="about.html">About</a></li>
 	  <li><a href="#" data-page="music.html">Music</a></li>
+	  <li><a href="#" data-page="about.html">About</a></li>
+	  <li><a href="#" data-page="home.html">News</a></li>
 	  <li><a href="#" data-page="contact.html">Contact</a></li>
 	  <li><a href="#" data-page="links.html">Links</a></li>
 	  <!--
@@ -44,7 +44,7 @@
 	  load($(this).data("page"));
 	  $("body").data("twttr-rendered", false);
 	});
-	load("home.html");
+	load("music.html");
       </script>
     </div>
   </body>
