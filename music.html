@@ -1,2 +1,26 @@
-<a id="music-download" href="#">Download Music</a>
+<ul id="albums">
+  <li>
+    <img src="cover.jpg">
+    <audio controls id="player"></audio>
+    <ol class="songs">
+      <li>From the Mountaintop</li>
+      <li>Go Without Grace</li>
+      <li>To the Men Left in the Dark</li>
+      <li>The River Song</li>
+      <li>What's Left on Earth</li>
+    </ol>
+  </li>
+</ul>
+<script>
+  $(".songs li").click(function(evt) {
+    var $parent = $(this).parents("#albums > li"),
+        $siblings = $parent.find(".songs li"),
+	$player = $parent.find("audio");
+    evt.preventDefault();
+    $siblings.removeClass("active");
+    $(this).addClass("active");
+    $player.attr("src", "river.mp3")
+    $player[0].play();
+  });
+</script>
 
