@@ -103,10 +103,18 @@ iframe {
   width 300px;
   float: left;
 }
-.songs {
+.details {
   float: left;
-  margin-left: 20px;
   padding: 10px;
+}
+.details h3 {
+  margin: 0;
+  padding: 0;
+}
+.songs {
+  margin-left: 20px;
+  padding: 0;
+  padding-top: 10px;
 }
 .songs li {
   cursor: pointer;
