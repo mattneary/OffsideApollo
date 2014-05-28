@@ -111,8 +111,9 @@ iframe {
 .songs li {
   cursor: pointer;
   margin-bottom: 6px;
+  color: #FDE99E;
   }
   .songs .active {
-    color: red;
+    color: #A8FAF9;
   }
 
