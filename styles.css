@@ -1,5 +1,5 @@
 body {
-  background: #1E0F1D;
+  background: #2F0039;
   color: white;
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -63,6 +63,9 @@ ul#nav {
     #nav li a {
       text-decoration: none;
       color: white;
+    }
+    #nav li a:hover {
+      color: #A8FAF9;
     }
 iframe {
   width: 100% !important;
